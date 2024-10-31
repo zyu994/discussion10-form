@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<!-- <form action="" method="post"> Connect to formspree.io-->
+    <form
+    action="https://formspree.io/f/xyzykreo"
+    method="POST"
+  >
+        <fieldset>
+            <legend>Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name"  required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text"  id="last-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="program">Program: </label>
+            <input type="text" id="program" name="program">
+
+            <label for="date">Date For Picking Up</label>
+            <input type="date" id="date" required>
+
+            <div class="radio-group">
+                <p>Available Time for Picking Up Grocery:</p>
+                <input type="radio" id="morning" name="available-time" value="morning">
+                <label for="morning">Morning</label>
+
+                <input type="radio" id="afternoon" name="available-time" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+
+                <input type="radio" id="evening" name="available-time" value="evening">
+                <label for="evening">Evening</label>
+
+                <input type="radio" id="weekend" name="available-time" value="weekend">
+                <label for="weekend">Weekend</label>
+            </div>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
